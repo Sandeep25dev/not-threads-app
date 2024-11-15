@@ -3,5 +3,5 @@ export default function Home() {
     <>
       <h1 className="head-text text-left">Home</h1>
     </>
-  );
-}
+  )};
+
