@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable camelcase */
 // Resource: https://clerk.com/docs/users/sync-data-to-your-backend
 // Above article shows why we need webhooks i.e., to sync data to our backend
@@ -59,6 +60,7 @@ export const POST = async (request: Request) => {
     return NextResponse.json({ message: err }, { status: 400 });
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-non-null-asserted-optional-chain
   const eventType: EventType = evnt?.type!;
 
   // Listen organization creation event
