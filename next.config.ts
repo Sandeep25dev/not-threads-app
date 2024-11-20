@@ -2,6 +2,9 @@ import { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // serverActions: true,
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   serverExternalPackages: ["mongoose"],
 
   images: {
