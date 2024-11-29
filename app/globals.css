@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+.loader-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  position: fixed; /* Make it cover the whole screen */
+  top: 0;
+  left: 0;
+}
+
+.loader {
+  /* Add your loader-specific styles */
+  width: 50px; /* Example size */
+  height: 50px;
+  border: 5px solid #ccc;
+  border-top: 5px solid #007bff; /* Spinner color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @layer components {
   /* main */
   .main-container {
